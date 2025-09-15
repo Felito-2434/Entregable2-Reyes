@@ -1,0 +1,138 @@
+
+
+body {
+    background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#CME {
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: left;
+    cursor: pointer;
+    background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+}
+#tres-lineas{
+    background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+    margin-right: auto;
+}
+
+#CME td {
+    padding: 10px;
+    text-align: center;
+}  
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/*Barra Lateral */
+.menu-btn {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu-btn div {
+    height: 4px;
+    background: black;
+    border-radius: 2px;
+
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.sidebar ul li:last-child {
+    border-bottom: none;
+    margin-top: 30px;
+}
+
+.sidebar ul li a, 
+.sidebar ul li b {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar ul li b {
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li a:hover, 
+.sidebar ul li b:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/*Fin Barra Lateral*/
+
+/*El estilo de la tabla lo saque de chat gpt*/
+table {
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#TablaCalculo {
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);
+    border: 5px solid black;
+    border-collapse: collapse;
+    
+
+}
+
+

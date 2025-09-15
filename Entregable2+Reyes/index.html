@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Monedas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+
+    <!---Por ahora el conversor tiene solo 2 monedas disponibles para hacer la conversion
+    y con tipo de conversion fija.-->
+    
+<div class="overlay" id="overlay"></div>
+    <table id="CME">
+         <tr>
+        <td>CME</td>
+        </tr>
+    </table>
+
+    <table id="tres-lineas" border="2">
+        <tr>
+            <td>
+                <div class="menu-btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </td>
+        </tr>
+     </table>
+
+  <!-- Barra lateral -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Funciones</a></li>
+      <li><a href="#">Ayuda</a></li>
+      <li><b id="closeSidebar">X</b></li>
+    </ul>
+  </div>
+
+    <table id="TablaCalculo">
+     <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <h4 id="Moneda-convertir">Tu moneda (ARS)</h4>
+                        <form action="">
+                            <input type="text" id="inputMoneda" placeholder="Ingrese la cantidad">
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="buttonChange">Cambiar </button> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4 id="Moneda-convertida"> Moneda a convertir (USD)</h4>
+                        <form action="">
+                            <input type="text" class="currence-amount" id="outputMoneda" placeholder="Resultado">
+                        </form>
+                    </td>
+                </tr>
+                    <div class="conversion-text" id="conversionText">
+                        1 USD = 1466.00 ARS
+                    </div>
+            </table>
+        </td>
+     </tr>  
+    </table>
+   
+</body>
+</html>
